@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Casual Booking</title>
+
+<link rel="stylesheet" href="css/cbcalendar.css" />
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui-1.10.4.datepicker.js"></script>
+<script src="js/cbcalendar.js"></script>
+
+
+  
+</head>
+
+<body>
+
+<div class="cbcalendar_outer">
+	<div class="cbcalendar_header_left">
+		<div class="cbcalendar_header"><div class="cbcalendar_header_inner"></div></div>
+	</div>	
+	<div class="cbcalendar_header_right">
+		<div class="cbcalendar_header_row"> <label>Service:</label> <select><option>erewre</option></select> <input value="Setup" type="button" /></div>
+		<div class="cbcalendar_header_row"><label>Room:</label> <select><option>erewre</option></select></div>
+	</div>
+	
+	<div class="calendar_description onlyfor_staff">
+	Please click to modify the details of the days. (You can select multiple days with single click.)
+	</div>
+	<div class="calendar_description only_for_parent">
+	Please click on the green and orange dates to make a booking or Purple dates to cancel
+	</div>
+	
+	<div class="calendar_flags">
+	<div class="flag_section">
+		<a title="Available : These days are available for to book your child."><div class="calendar_flag"><div class="calendar_flag_color green"></div><div class="calendar_flag_text">Available days</div></div></a>
+		<a title="Full: These days are full, therefore no more children can be booked in for these days."><div class="calendar_flag"><div class="calendar_flag_color red"></div><div class="calendar_flag_text">Full</div></div></a>
+		<a title="No Program:  There is no service on these days for this care type."><div class="calendar_flag"><div class="calendar_flag_color grey"></div><div class="calendar_flag_text">No program day</div></div></a>
+	</div>
+	<div class="only_for_parent flag_section">
+	
+		<a title="Booked Casual : These days are booked for your child on the casual basis.  If today is before the refundable deadline, you may cancel this booking without being charged."><div class="calendar_flag"><div class="calendar_flag_color purple"></div><div class="calendar_flag_text">Casual Book days</div></div></a>
+		
+		<a title="Booked Permanent : These days are reoccurring scheduled days at this service for your child.  To modify these days, please see your Director/ Coordinator."><div class="calendar_flag"><div class="calendar_flag_color blue"></div><div class="calendar_flag_text">Scheduled days</div></div></a>
+		<a title="Absent: You have indicated that your child is going to be missing on this day."><div class="calendar_flag"><div class="calendar_flag_color yellow"></div><div class="calendar_flag_text">Absent</div></div></a>
+	</div>
+	<div class="cleardiv"></div>
+	</div>
+	
+	
+	<div class="cbcalendar_container">
+		<div id="cbcalendar"></div>
+	</div>
+	<div class="cbcalendar_context">
+	<h2 class="empty_title">No dates selected</h2>
+		<div class="cbcalendar_context_inner">
+		<h2 class="cbcalendar_context_title"></h2>
+			Available : <span id="cx_available_spot"></span> <br />
+			Total Room Capacity : <span id="cx_room_capacity"></span> <br />
+			Display note : <br />
+			<textarea id="cx_display_note"></textarea>
+			<br />
+			<div class="cbcalendar_context_action"><button type="button" id="calendar_action">Update</button></div>
+			<div class="is_offered_message"><span>*</span> This selected day is already offered to your child as a permanent booking but has not been accepted.  Instead of booking this day, it is advised that you accept the offer.</div>
+		</div>
+	</div>
+</div>	
+
+<div id="dialog-confirm" title="Alert">
+  <p></p>
+</div>
+
+</body>
+</html>
