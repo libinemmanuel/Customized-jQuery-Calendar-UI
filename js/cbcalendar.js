@@ -1,3 +1,5 @@
+/* Author : Libin Emmanuel */
+
 cbcalendar = {
     userRole: "parent", //values:staff,parent 
     dayLimit: 2, //Number of days where canceling is allowed.
