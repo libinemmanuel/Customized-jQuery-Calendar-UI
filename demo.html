@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Customized-jquery-calendar-ui : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/cbcalendar.css" />
+
+	<script src="javascripts/jquery-1.10.2.js"></script>
+	<script src="javascripts/jquery-ui-1.10.4.datepicker.js"></script>
+	<script src="javascripts/jsonData.js"></script>
+	<script src="javascripts/cbcalendar.js"></script>
+	
+    <title>Customized-jquery-calendar-ui</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/libinemmanuel/Customized-jQuery-Calendar-UI">View on GitHub</a>
+
+          <h1 id="project_title">Customized-jquery-calendar-ui</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/libinemmanuel/Customized-jQuery-Calendar-UI/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/libinemmanuel/Customized-jQuery-Calendar-UI/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer" style="background:#fff;">
+      <section id="main_content" class="inner">
+	  
+	 
+
+<div class="cbcalendar_outer">
+	<div class="cbcalendar_header_left">
+		<div class="cbcalendar_header"><div class="cbcalendar_header_inner"></div></div>
+	</div>	
+	
+	
+	<div class="calendar_description onlyfor_staff">
+	Please click to modify the details of the days. (You can select multiple days with single click.)
+	</div>
+	<div class="calendar_description only_for_parent">
+	Please click on the green and orange dates to make a booking or Purple dates to cancel
+	</div>
+	
+	<div class="calendar_flags">
+	<div class="flag_section">
+		<a title="Available : These days are available for to book your child."><div class="calendar_flag"><div class="calendar_flag_color green"></div><div class="calendar_flag_text">Available days</div></div></a>
+		<a title="Full: These days are full, therefore no more children can be booked in for these days."><div class="calendar_flag"><div class="calendar_flag_color red"></div><div class="calendar_flag_text">Full</div></div></a>
+		<a title="No Program:  There is no service on these days for this care type."><div class="calendar_flag"><div class="calendar_flag_color grey"></div><div class="calendar_flag_text">No program day</div></div></a>
+	</div>
+	<div class="only_for_parent flag_section">
+	
+		<a title="Booked Casual : These days are booked for your child on the casual basis.  If today is before the refundable deadline, you may cancel this booking without being charged."><div class="calendar_flag"><div class="calendar_flag_color purple"></div><div class="calendar_flag_text">Casual Book days</div></div></a>
+		
+		<a title="Booked Permanent : These days are reoccurring scheduled days at this service for your child.  To modify these days, please see your Director/ Coordinator."><div class="calendar_flag"><div class="calendar_flag_color blue"></div><div class="calendar_flag_text">Scheduled days</div></div></a>
+		<a title="Absent: You have indicated that your child is going to be missing on this day."><div class="calendar_flag"><div class="calendar_flag_color yellow"></div><div class="calendar_flag_text">Absent</div></div></a>
+	</div>
+	<div class="cleardiv"></div>
+	</div>
+	
+	
+	<div class="cbcalendar_container">
+		<div id="cbcalendar"></div>
+	</div>
+	<div class="cbcalendar_context">
+	<h2 class="empty_title">No dates selected</h2>
+		<div class="cbcalendar_context_inner">
+		<h2 class="cbcalendar_context_title"></h2>
+			Available : <span id="cx_available_spot"></span> <br />
+			Total Room Capacity : <span id="cx_room_capacity"></span> <br />
+			Display note : <br />
+			<textarea id="cx_display_note"></textarea>
+			<br />
+			<div class="cbcalendar_context_action"><button type="button" id="calendar_action">Update</button></div>
+			<div class="is_offered_message"><span>*</span> This selected day is already offered to your child as a permanent booking but has not been accepted.  Instead of booking this day, it is advised that you accept the offer.</div>
+		</div>
+	</div>
+</div>	
+
+<div id="dialog-confirm" title="Alert">
+  <p></p>
+</div>
+<br clear="all" />
+ </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Customized-jquery-calendar-ui maintained by <a href="https://github.com/libinemmanuel">libinemmanuel</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
+

@@ -39,10 +39,6 @@ ol, ul {
   list-style: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 /*******************************************************************************
 Theme Styles
@@ -230,7 +226,7 @@ hr {
   border: none;
   background: url('../images/bg_hr.png') repeat-x center;
 }
-
+/*
 table {
   border: 1px solid #373737;
   margin-bottom: 20px;
@@ -252,7 +248,7 @@ td {
 form {
   background: #f2f2f2;
   padding: 20px;
-}
+}*/
 
 /*******************************************************************************
 Full-Width Styles
